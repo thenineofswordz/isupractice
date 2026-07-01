@@ -1,0 +1,163 @@
+body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #eef2f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableau-container {
+  width: 95vw;
+  height: 85vh;
+  max-width: 1400px;
+  max-height: 800px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.map-area {
+  flex-grow: 1;
+  height: 100%;
+  position: relative;
+  background-color: #cad2d3;
+}
+
+.control-panel {
+  width: 340px;
+  min-width: 340px;
+  background-color: #ffffff;
+  border-left: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.panel-section {
+  margin-bottom: 24px;
+}
+
+.section-label {
+  display: block;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #475569;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.tableau-input, .tableau-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #334155;
+  background-color: #fff;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.tableau-input:focus, .tableau-select:focus {
+  border-color: #2980b9;
+}
+
+.legend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8fafc;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.legend-item input {
+  margin-right: 10px;
+}
+
+.color-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  flex-shrink: 0;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+.stats-area {
+  margin-top: auto;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+}
+
+.region-passport {
+  background: #f1f5f9;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+}
+
+.region-passport h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.passport-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #475569;
+}
+
+.passport-row strong {
+  color: #0f172a;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 16px;
+  color: #475569;
+  background-color: #f8fafc;
+  font-weight: 600;
+}
+
+.tableau-popup h4 {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  color: #1e293b;
+}
+.tableau-popup p {
+  margin: 2px 0;
+  font-size: 12px;
+  color: #475569;
+}
